@@ -3,7 +3,7 @@
 $ports = [80, 443];
 $hosts = [
         'example.com',
-        '144.76.92.216',
+        '103.26.139.87',
         'sandbox.sslcommerz.com',
         '103.26.139.148',
         'securepay.sslcommerz.com'
