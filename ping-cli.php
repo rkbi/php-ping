@@ -6,7 +6,7 @@ $hosts = [
         '103.26.139.87',
         'sandbox.sslcommerz.com',
         '103.26.139.148',
-        'securepay.sslcommerz.com'
+        'securepay.sslcommerz.com',
     ];
 
 $waitTimeoutInSeconds = 1;

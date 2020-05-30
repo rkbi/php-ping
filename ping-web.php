@@ -1,4 +1,7 @@
 <?php
+// Get Server Address
+echo "Server IP Address is: " . $_SERVER['REMOTE_ADDR'] .  "<br><br>";
+
 // ping start
 $ports = [80, 443];
 $hosts = [
@@ -6,7 +9,7 @@ $hosts = [
         '103.26.139.87',
         'sandbox.sslcommerz.com',
         '103.26.139.148',
-        'securepay.sslcommerz.com'
+        'securepay.sslcommerz.com',
     ];
 
 $waitTimeoutInSeconds = 1;
@@ -17,7 +20,7 @@ for ($i = 0; $i < count($hosts); $i++) {
         if ($fp = @fsockopen($host, $port, $errCode, $errStr, $waitTimeoutInSeconds)) {
             echo "connected to $host on port $port" . '<br>';
         } else {
-            echo "can not connect to $host on port $port" . '<br>';
+            echo "<b>can not connect</b> to $host on port $port" . '<br>';
         }
     }
     echo '<br>';
