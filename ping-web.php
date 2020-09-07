@@ -1,6 +1,6 @@
 <?php
 // Get Server Address
-echo "Server IP Address is: " . $_SERVER['REMOTE_ADDR'] .  "<br><br>";
+echo "Server IP Address is: " . $_SERVER['SERVER_ADDR'] .  "<br><br>";
 
 // ping start
 $ports = [80, 443];
