@@ -18,9 +18,9 @@ for ($i = 0; $i < count($hosts); $i++) {
         $host = $hosts[$i];
         $port = $ports[$j];
         if ($fp = @fsockopen($host, $port, $errCode, $errStr, $waitTimeoutInSeconds)) {
-            echo "connected to $host on port $port" . '<br>';
+            echo "<span style='color:green'><b>connected</b></span> to $host on port $port" . '<br>';
         } else {
-            echo "<b>can not connect</b> to $host on port $port" . '<br>';
+            echo "<span style='color:red'><b>failed to connect</b></span> to $host on port $port" . '<br>';
         }
     }
     echo '<br>';
