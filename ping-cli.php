@@ -1,4 +1,7 @@
 <?php
+// Get Server Address
+echo "Server IP Address is: " . json_decode(file_get_contents('https://httpbin.org/ip'))->origin . PHP_EOL . PHP_EOL;
+
 // ping start
 $ports = [80, 443];
 $hosts = [
