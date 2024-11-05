@@ -1,11 +1,11 @@
 # php-ping
 
-### very simple php script to bulk check open ports from server
+### single file php script to bulk check open ports and connectivity
 
 ## Usage
 
 ### From browser
-Put the ping-web.php file on webroot and browse http://[domain]/ping-web.php
+Put the ```ping-web.php``` file on webroot and browse ```https://[domain]/ping-web.php```
 
 ### From command line
 run ```php ping-cli.php``` from command line
